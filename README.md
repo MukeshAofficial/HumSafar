@@ -38,6 +38,14 @@ Drivers can offer rides by publishing route details, available seats, departure 
 - SOS feature during active trips
 - Women-only safe rides
 
+## 🔮 Future Scope
+- ⁠Allow direct access to emergency contacts via the app to improve rider safety.
+- ⁠Implementing live ride tracking to Improve safety and transparency.
+- ⁠Incorporate safe in-app calling and chat so users can communicate without disclosing personal details such as phone numbers.
+- ⁠Encourage regular and scheduled transportation for users who commute every day, like students and office workers.
+- ⁠Include digital payments and in-app cost splitting to guarantee transparent, cashless transactions.
+- ⁠Use user feedback to create a more reliable community by incorporating rider ratings and reviews that are accessible to drivers.
+
 
 **HumSafar** — Your trusted travel companion.
 
