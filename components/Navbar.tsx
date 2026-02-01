@@ -56,9 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ onDashboardClick, onLogoClick, isDashbo
           className="flex items-center gap-2 cursor-pointer group"
           onClick={onLogoClick}
         >
-          <div className="p-2 bg-emerald-500 rounded-lg text-white group-hover:bg-emerald-600 transition-colors shadow-lg shadow-emerald-500/20">
-            <Car size={24} />
-          </div>
+          <img src="/logo.jpeg" alt="HumSafar" className="w-10 h-10" />
           <span className="text-xl font-bold tracking-tight text-slate-800 dark:text-white">
             HumSafar
           </span>
