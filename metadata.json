@@ -1,0 +1,7 @@
+{
+  "name": "HumSafar",
+  "description": "A modern, eco-friendly ride-sharing platform connecting daily commuters to save money and reduce traffic.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
