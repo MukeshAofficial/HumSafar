@@ -291,7 +291,7 @@ export const db = {
       seats_total: ride.seatsTotal,
       seats_left: ride.seatsTotal,
       circle_type: 'neighbor',
-      circle_name: user.home.split(',')[0],
+      circle_name: (user.home && user.home.split(',')[0]) || 'Neighborhood',
       is_women_only: ride.isWomenOnly
     };
 
@@ -302,6 +302,23 @@ export const db = {
       .single();
 
     if (error) throw error;
+
+    // Create a corresponding trip for the driver so it appears in their active trips
+    const tripPayload = {
+        user_id: user.id,
+        ride_id: data.id,
+        partner_name: 'Waiting for Riders',
+        partner_img: 'https://ui-avatars.com/api/?name=passengers&background=e2e8f0&color=64748b',
+        route: ride.route,
+        time: ride.time,
+        cost: ride.cost,
+        status: 'confirmed', // Indicates ride is active
+        role: 'driver',
+        vehicle_type: 'car',
+        vehicle_info: user.car?.model || 'Shared Vehicle'
+    };
+
+    await supabase.from('trips').insert([tripPayload]);
 
     return {
       ...ride,
@@ -424,7 +441,8 @@ export const db = {
       time: request.time,
       cost: 75.00,
       seatsTotal: 1,
-      seatsLeft: 0
+      seatsLeft: 0,
+      isWomenOnly: false
     });
 
     // 3. Create Trip for Driver

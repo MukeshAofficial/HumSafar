@@ -1,3 +1,5 @@
+
+export const dbSchemaSQL = `
 -- Create Profiles table (extends auth.users)
 create table public.profiles (
   id uuid references auth.users not null primary key,
@@ -94,4 +96,4 @@ alter table public.requests enable row level security;
 create policy "Requests viewable by everyone" on public.requests for select using (true);
 create policy "Riders can insert requests" on public.requests for insert with check (auth.uid() = rider_id);
 create policy "Users can update requests" on public.requests for update using (true); 
-
+`;
