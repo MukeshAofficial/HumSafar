@@ -1,17 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# HumSafar 🚗🌱
 
-# Run and deploy your AI Studio app
+HumSafar is a secure and community-driven ride-sharing application that connects nearby commuters traveling in the same direction. It helps reduce travel costs, traffic congestion, and environmental impact while making daily commutes more convenient and safe.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
+- Real-time ride matching for drivers and riders
+- Women-only ride mode for safer commuting
+- Support for bikes and cars
+- Flexible schedules and customizable fares
+- SOS emergency support during trips
+- AI-powered in-app support for user queries
+- Community credits system
+- Trip history, ratings, and feedback
+- Light/Dark mode support
 
-View your app in AI Studio: https://ai.studio/apps/drive/1oGI_hYKmuksrrtjzazibP8SZtPQj0rPQ
+## 🧩 How It Works
+1. Find a ride by selecting your route, vehicle preference, and mode (regular or women-only)
+2. Join nearby rides and wait for driver confirmation
+3. Track trip status and use SOS if needed
+4. Complete the ride and rate your experience
 
-## Run Locally
+Drivers can offer rides by publishing route details, available seats, departure time, and fare.
 
-**Prerequisites:**  Node.js
+## 🛠️ Tech Stack
+- Frontend: Web-based UI
+- Maps: Leaflet
+- Backend: Supabase (Authentication & Database)
+- AI Support: Integrated chatbot assistance
 
+## 🌍 Impact
+- Cuts commute costs by up to 50%
+- Reduces traffic and carbon emissions
+- Builds a trusted and sustainable local commuting community
+
+## 🔐 Safety & Trust
+- Verified users
+- Emergency contact setup
+- SOS feature during active trips
+- Women-only safe rides
+
+
+**HumSafar** — Your trusted travel companion.
 
 1. Install dependencies:
    `npm install`
